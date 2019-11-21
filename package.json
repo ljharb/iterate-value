@@ -1,0 +1,32 @@
+{
+	"name": "iterate-value",
+	"version": "0.0.0",
+	"description": "Iterate any iterable JS value. Works robustly in all environments, all versions.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ljharb/iterate-value.git"
+	},
+	"keywords": [
+		"iterate",
+		"map",
+		"set",
+		"collection",
+		"string",
+		"array",
+		"es2015",
+		"es6",
+		"iterator",
+		"symbol.iterator",
+		"symbol"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ljharb/iterate-value/issues"
+	},
+	"homepage": "https://github.com/ljharb/iterate-value#readme"
+}
