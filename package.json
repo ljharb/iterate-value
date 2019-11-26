@@ -3,6 +3,13 @@
 	"version": "0.0.0",
 	"description": "Iterate any iterable JS value. Works robustly in all environments, all versions.",
 	"main": "index.js",
+	"exports": [
+		{
+			"default": "./index.js"
+		},
+		"./index.js"
+	],
+	"type": "commonjs",
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
@@ -34,5 +41,8 @@
 	"devDependencies": {
 		"@ljharb/eslint-config": "^15.0.2",
 		"eslint": "^6.7.1"
+	},
+	"dependencies": {
+		"es-get-iterator": "^1.0.0"
 	}
 }
