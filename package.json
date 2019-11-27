@@ -13,7 +13,9 @@
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"tests-only": "node test",
+		"posttest": "npx aud",
+		"test": "npm run tests-only"
 	},
 	"repository": {
 		"type": "git",
@@ -43,7 +45,12 @@
 	"homepage": "https://github.com/ljharb/iterate-value#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^15.0.2",
-		"eslint": "^6.7.1"
+		"eslint": "^6.7.1",
+		"for-each": "^0.3.3",
+		"has-bigints": "^1.0.0",
+		"has-symbols": "^1.0.1",
+		"object-inspect": "^1.7.0",
+		"tape": "^4.11.0"
 	},
 	"dependencies": {
 		"es-get-iterator": "^1.0.0"
