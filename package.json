@@ -15,7 +15,9 @@
 		"pretest": "npm run lint",
 		"tests-only": "node test",
 		"posttest": "npx aud",
-		"test": "npm run tests-only"
+		"test": "npm run tests-only",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -45,6 +47,7 @@
 	"homepage": "https://github.com/ljharb/iterate-value#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^15.0.2",
+		"auto-changelog": "^1.16.2",
 		"eslint": "^6.7.1",
 		"for-each": "^0.3.3",
 		"has-bigints": "^1.0.0",
@@ -54,5 +57,12 @@
 	},
 	"dependencies": {
 		"es-get-iterator": "^1.0.0"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false
 	}
 }
