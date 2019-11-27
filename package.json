@@ -11,6 +11,7 @@
 	],
 	"type": "commonjs",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"tests-only": "node test",
@@ -53,6 +54,7 @@
 		"has-bigints": "^1.0.0",
 		"has-symbols": "^1.0.1",
 		"object-inspect": "^1.7.0",
+		"safe-publish-latest": "^1.1.4",
 		"tape": "^4.11.0"
 	},
 	"dependencies": {
