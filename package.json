@@ -3,12 +3,14 @@
 	"version": "1.0.0",
 	"description": "Iterate any iterable JS value. Works robustly in all environments, all versions.",
 	"main": "index.js",
-	"exports": [
-		{
-			"default": "./index.js"
-		},
-		"./index.js"
-	],
+	"exports": {
+		".": [
+			{
+				"default": "./index.js"
+			},
+			"./index.js"
+		]
+	},
 	"type": "commonjs",
 	"scripts": {
 		"prepublish": "safe-publish-latest",
