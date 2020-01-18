@@ -2,26 +2,15 @@
 
 var getIterator = require('es-get-iterator');
 var $TypeError = TypeError;
+var iterate = require('iterate-iterator');
 
-// eslint-disable-next-line consistent-return
-module.exports = function iterateValue(iterable, callback) {
+module.exports = function iterateValue(iterable) {
 	var iterator = getIterator(iterable);
 	if (!iterator) {
 		throw new $TypeError('non-iterable value provided');
 	}
-	if (arguments.length > 1 && typeof callback !== 'function') {
-		throw new $TypeError('`callback`, if provided, must be a function');
+	if (arguments.length > 1) {
+		return iterate(iterator, arguments[1]);
 	}
-	var values = callback || [];
-	var result;
-	while ((result = iterator.next()) && !result.done) {
-		if (callback) {
-			callback(result.value); // eslint-disable-line callback-return
-		} else {
-			values.push(result.value);
-		}
-	}
-	if (!callback) {
-		return values;
-	}
+	return iterate(iterator);
 };
