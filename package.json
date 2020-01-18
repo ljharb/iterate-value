@@ -1,6 +1,6 @@
 {
 	"name": "iterate-value",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Iterate any iterable JS value. Works robustly in all environments, all versions.",
 	"main": "index.js",
 	"exports": {
