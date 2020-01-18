@@ -36,7 +36,7 @@ assert.deepEqual(iterate([1, 2]), [1, 2]);
 assert.deepEqual(iterate(new Set([1, 2])), [1, 2]);
 assert.deepEqual(iterate(new Map([[1, 2], [3, 4]])), [[1, 2], [3, 4]]);
 
-function assertWithCallback(iterable, expexcted) {
+function assertWithCallback(iterable, expected) {
 	var values = [];
 	var callback = function (x) { values.push(x); };
 	iterate(iterable, callback);
