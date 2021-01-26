@@ -1,6 +1,5 @@
 # iterate-value <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
-[![Build Status][travis-svg]][travis-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
@@ -52,15 +51,13 @@ assertWithCallback(new Map([[1, 2], [3, 4]]), [[1, 2], [3, 4]]);
 Simply clone the repo, `npm install`, and run `npm test`
 
 [package-url]: https://npmjs.org/package/iterate-value
-[npm-version-svg]: http://versionbadg.es/ljharb/iterate-value.svg
-[travis-svg]: https://travis-ci.org/ljharb/iterate-value.svg
-[travis-url]: https://travis-ci.org/ljharb/iterate-value
+[npm-version-svg]: https://versionbadg.es/ljharb/iterate-value.svg
 [deps-svg]: https://david-dm.org/ljharb/iterate-value.svg
 [deps-url]: https://david-dm.org/ljharb/iterate-value
 [dev-deps-svg]: https://david-dm.org/ljharb/iterate-value/dev-status.svg
 [dev-deps-url]: https://david-dm.org/ljharb/iterate-value#info=devDependencies
 [npm-badge-png]: https://nodei.co/npm/iterate-value.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/iterate-value.svg
+[license-image]: https://img.shields.io/npm/l/iterate-value.svg
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/iterate-value.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=iterate-value
+[downloads-image]: https://img.shields.io/npm/dm/iterate-value.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=iterate-value
