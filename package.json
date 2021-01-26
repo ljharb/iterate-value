@@ -17,8 +17,8 @@
 		"prelint": "evalmd README.md",
 		"lint": "eslint .",
 		"pretest": "npm run lint",
-		"tests-only": "node test",
-		"posttest": "npx aud --production",
+		"tests-only": "nyc tape 'test/**/*.js'",
+		"posttest": "aud --production",
 		"test": "npm run tests-only",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
@@ -58,6 +58,7 @@
 		"for-each": "^0.3.3",
 		"has-bigints": "^1.0.0",
 		"has-symbols": "^1.0.1",
+		"nyc": "^10.3.2",
 		"object-inspect": "^1.7.0",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.0-next.5"
