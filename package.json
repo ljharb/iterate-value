@@ -64,7 +64,7 @@
 		"tape": "^5.1.1"
 	},
 	"dependencies": {
-		"es-get-iterator": "^1.1.0",
+		"es-get-iterator": "^1.1.1",
 		"iterate-iterator": "^1.0.1"
 	},
 	"auto-changelog": {
