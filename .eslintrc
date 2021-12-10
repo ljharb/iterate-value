@@ -3,10 +3,6 @@
 
 	"extends": "@ljharb",
 
-	"rules": {
-		"max-statements": [2, 15],
-	},
-
 	"overrides": [
 		{
 			"files": "test/**",
