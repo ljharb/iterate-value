@@ -62,7 +62,7 @@
 	},
 	"dependencies": {
 		"es-get-iterator": "^1.1.2",
-		"iterate-iterator": "^1.0.1"
+		"iterate-iterator": "^1.0.2"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
