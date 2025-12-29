@@ -65,5 +65,5 @@ Simply clone the repo, `npm install`, and run `npm test`
 [downloads-url]: https://npm-stat.com/charts.html?package=iterate-value
 [codecov-image]: https://codecov.io/gh/ljharb/iterate-value/branch/main/graphs/badge.svg
 [codecov-url]: https://app.codecov.io/gh/ljharb/iterate-value/
-[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/ljharb/iterate-value
+[actions-image]: https://img.shields.io/github/check-runs/ljharb/iterate-value/main
 [actions-url]: https://github.com/ljharb/iterate-value/actions
